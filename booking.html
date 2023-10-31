@@ -9,7 +9,7 @@
     <meta name="description" content="MediHub - Medical & Health Template">
 
     <!-- ========== Page Title ========== -->
-    <title>Le Soiree - Nightclubs around Klang Valley</title>
+    <title>Booking | Le Soirée</title>
 	<link rel="icon" href="assets/img/favicon.png">
 
     <!-- ========== Start Stylesheet ========== -->
@@ -24,7 +24,6 @@
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -37,9 +36,17 @@
     <!-- ========== Google Fonts ========== -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600,700,800" rel="stylesheet">
-<style>
-   /* Style for the star rating container */
-   .rating {
+
+    <style>
+         
+        h3 {
+            color: yellow;
+        }
+        h4 {
+            color: yellow;
+        }
+         /* Style for the star rating container */
+         .rating {
             unicode-bidi: bidi-override;
             direction: rtl;
             text-align: left;
@@ -66,6 +73,10 @@
             color: gold;
             left: 0;
         }
+        .Address {
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+        }
         /* Style for the map marker icon */
         .map-marker {
             color: yellow;
@@ -88,8 +99,6 @@
         .phone-icon {
             color: yellow;
         }
-
-        /* Style for the phone number */
         .phone-number {
             color: yellow;
         }
@@ -99,58 +108,17 @@
         h4 {
             color: yellow;
         }
-        /* Style for the plus and minus buttons */
-        .quantity-button {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            background-color: #f9f11f;
-            color: rgb(4, 2, 2);
-            font-size: 20px;
-            cursor: pointer;
+        .white-background {
+         background-color: white;
         }
+    </style>
 
-        /* Style for the quantity input field */
-        .quantity-input {
-            width: 40px;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        /* Style for text input fields */
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            font-size: 16px;
-        }
-
-        /* Style for the textarea */
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 3px 0;
-            font-size: 16px;
-        }
-        #book {
-        background-color: rgb(225, 44, 238); /* Set the button background color to pink */
-        border: none; /* Remove the button border */
-        color: rgb(234, 241, 43); /* Text color */
-        padding: 10px 20px; /* Padding around the text */
-        font-size: 16px; /* Text size */
-        cursor: pointer; /* Change cursor on hover */
-         }
-
-         /* Apply a hover effect */
-        #book:hover {
-        background-color: #ff66b2; /* Change background color on hover */
-        }
-</style>
 </head>
 
 <body>
 
+    <!-- Start Header Top 
+    ============================================= -->
     <div class="top-bar-area inline inc-border">
         <div class="container">
             <div class="row">
@@ -196,20 +164,22 @@
     </div>
     <!-- End Header Top -->
 
-     <!-- Start Breadcrumb 
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area shadow dark bg-fixed text-light" style="background-image: url(assets/img/club3.jpg);">
+    <div class="breadcrumb-area shadow dark bg-fixed text-light" style="background-image: url(assets/img/club5.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1>RSVP</h1>
+                    <h1>Booking Page </h1>
                 </div>
                 <div class="col-md-6 text-right">
                     <ul class="breadcrumb">
                         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#">Bundle Discount</a></li>
-                        <li><a href="about-2.html">Discover</a></li>
-                        <li class="active">RSVP</li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="bundle-discount.html">Bundle Discount</a></li>
+                        <li class="active">Booking page</li>
                     </ul>
                 </div>
             </div>
@@ -217,168 +187,99 @@
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Start Appoinment
+    <!-- Start About
     ============================================= -->
-    <div class="container" style="background-image: url(assets/img/club11.jpg);">
+    <div class="about-area default-padding">
         <div class="container">
             <div class="row">
-                <!-- Start Appoinment Form -->
-                <div class="col-md-6 col-md-offset-6 appoinment">
-                    <div class="appoinment-box">
-                        <div class="appointment-schedule">
-                            <ul>
-                                <li>Sat - Tue <span>8:00 - 15:30</span></li>
-                                <li>Wed - Fri <span>10:00 - 16:30</span></li>
-                            </ul>
+                <div class="about-items">
+                    <div class="col-md-6 info">
+                        <div class="thumb">
+                            <img src="assets/img/club11.jpg" alt="Thumb">
                         </div>
-                        <div class="heading">
-                            <h2>Night CLUBS RSVP</h2>
-                        </div>
-                        <form action="#">
-                            <div class="row">
-                                <div class="rating">
-                                    <span>&#9733;</span>
-                                    <span>&#9733;</span>
-                                    <span>&#9733;</span>
-                                    <span>&#9733;</span>
-                                    <span>&#9733;</span>
-                                    <h5>Available</h5>
-                                </div>
-                                <div class="col-md-12">
-                                <a data-animation="animated slideInUp" class="btn btn-theme border btn-md" href="index-6.html">Payment</a>
-                                </div>
-                            </div>
-                        </form>
                     </div>
-                </div>
-                <!-- End Appoinment Form -->
-            </div>
-        </div>
-    </div>
-
-    <!-- End Appoinment -->
-
-    <!-- Start Contact Area
-    ============================================= -->
-    <div id="contact" class="contact-area bg-gray text-center default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="contact-items">
-                    <div class="col-md-8 col-md-offset-2 contact-form">
-                        <div class="site-heading text-center">
-                            <h2>Fill <span>Up</span></h2>
-    
-    <div class="features-area default-padding bg-gray">
-    <div class="container">
-    <div class="row">
-    <div class="col-md-20appoinment">
-    <div class="appoinment-box"> 
-   
-                                                
-    <div class="row">
-    <div class="col-md-7">
-    <div class="form-group">
-    <h4>Fill Up Your Personal Information</h4>
-    <p>Number of People:</p>
-    <div class="quantity-button" id="decrease">-</div>
-    <input class="quantity-input" type="text" id="quantity" value="1">
-    <div class="quantity-button" id="increase">+</div>
-
-    
-    <input type="text" id="first-name" placeholder="First Name">
-    <input type="text" id="last-name" placeholder="Last Name">
-    
-    <select id="gender">
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option>
-    </select>
-
-    <select id="schedule">
-        <option value="1">Sat - Tue 8:00 - 15:30</option>
-        <option value="2">Wed - Fri 10:00 - 16:30</option>
-    </select>
-
-    <input type="text" id="email" placeholder="Your Email">
-    
-    <input type="text" id="phone" placeholder="Your Phone Number">
-    
-    <select id="payment-method">
-        <option value="credit-card">Credit Card &#x1F4B3</option> <!-- Unicode credit card icon -->
-        <option value="debit-card">Debit Card &#x1F4B3</option> <!-- Unicode credit card icon -->
-        <option value="pay-pal">PayPal &#x1F4B1</option> <!-- Unicode money with wings icon -->
-        <option value="e-wallet">E-Wallet &#x1F4B0</option> <!-- Unicode money bag icon -->
-    </select>
-
-    <textarea id="message" placeholder="Your Message"></textarea>
-
-    <br>
-    <button id="book">Book RSVP</button>
-
-    <script>
-        // JavaScript to handle the plus and minus buttons
-        document.getElementById('increase').addEventListener('click', function() {
-            var quantityInput = document.getElementById('quantity');
-            quantityInput.value = parseInt(quantityInput.value) + 1;
-        });
-
-        document.getElementById('decrease').addEventListener('click', function() {
-            var quantityInput = document.getElementById('quantity');
-            if (parseInt(quantityInput.value) > 1) {
-                quantityInput.value = parseInt(quantityInput.value) - 1;
-            }
-        });
-
-        // JavaScript to handle the RSVP booking
-        document.getElementById('book').addEventListener('click', function() {
-            var quantity = document.getElementById('quantity').value;
-            var firstName = document.getElementById('first-name').value;
-            var lastName = document.getElementById('last-name').value;
-            var gender = document.getElementById('gender').value;
-            var gender = document.getElementById('schedule').value;
-            var email = document.getElementById('email').value;
-            var phone = document.getElementById('phone').value;
-            var paymentMethod = document.getElementById('payment-method').value;
-            var message = document.getElementById('message').value;
-
-            // Calculate total price based on quantity and payment method
-            var pricePerPerson = 10; // Replace with actual price per person
-            var totalPrice = (parseFloat(quantity) * pricePerPerson).toFixed(2);
-
-            // Generate a payment receipt
-            var paymentReceipt = "Payment Method: " + paymentMethod + "\n" +
-                                 "Total Price: $" + totalPrice;
-
-            // You can replace this with actual booking logic (e.g., sending data to a server)
-            var confirmationMessage = "RSVP booked for " + quantity + " people.\n\n" +
-                                     "First Name: " + firstName + "\n" +
-                                     "Last Name: " + lastName + "\n" +
-                                     "Gender: " + gender + "\n" +
-                                     "Schedule: " + schedule + "\n" +
-                                     "Email: " + email + "\n" +
-                                     "Phone Number: " + phone + "\n" +
-                                     "Message: " + message + "\n\n" +
-                                     "Payment Details:\n" + paymentReceipt;
-            alert(confirmationMessage);
-        });
-    </script>
-                                    </div>
+                    <div class="col-md-6 tabs-items">
+                        <!-- Tab Nav -->
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a data-toggle="tab" href="#tab1" aria-expanded="true">
+                                    <i class="fas fa-notes-medical"></i> Description
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#tab2" aria-expanded="false">
+                                    <i class="fas fa-map-marker-alt"></i> Location
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#tab3" aria-expanded="false">
+                                    <i class="fas fa-clock"></i> Opening Hour
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Tab Nav -->
+                        <!-- Start Tab Content -->
+                        <div class="tab-content tab-content-info">
+                            <!-- Single Item -->
+                            <div id="tab1" class="tab-pane fade active in">
+                                <div class="info title">
+                                    <h3>NIGHT Clubs</h3>
+                                    <p>
+                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                    </p>
+                                    <p>
+                                        Placing assured be if removed it besides on. Far shed each high read are men over day. Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had now those ought set often which. Or snug dull he show more true wish. No at many deny away miss evil. On in so indeed spirit an mother. Amounted old strictly but marianne admitted. People former is remove remain we praise
+                                    </p>
+                                    <a data-animation="animated slideInUp" class="btn btn-theme border btn-md" href="rsvp.html">RSVP</a>
                                 </div>
                             </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div id="tab2" class="tab-pane fade">
+                                <div class="info title">
+                                    <h3>location</h3>
+                                    <p>
+                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                    </p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div id="tab3" class="tab-pane fade">
+                                <div class="info title">
+                                    <h3>Schedule of working hours</h3>
+                                    <p>
+                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                    </p>
+                                    <ul>
+                                        <li> <span> Mon - Tues :  </span>
+                                          <div class="pull-right"> 6.00 am - 10.00 pm </div>
+                                        </li>
+                                        <li class="white-background">
+                                            <span>Wednes - Thurs:</span>
+                                            <div class="pull-right">8.00 am - 6.00 pm</div>
+                                          </li>
+                                        <li> <span> Sun : </span>
+                                          <div class="pull-right closed"> Closed </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
                         </div>
+                        <!-- End Tab Content -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
-             </div>
-                 </div>
-                    </div>
-                        </div>
-    <!-- End Contact Area -->
+    <!-- End About -->
 
- <!-- Start Contact
+     <!-- Start Contact
     ============================================= -->
     <div class="top-entry-area bg-gray text-center">
         <div class="container">
@@ -418,8 +319,6 @@
                 </div>
             </div>
         </div>
-       
-    <!--Thank You-->
 
     <!-- jQuery Frameworks
     ============================================= -->
